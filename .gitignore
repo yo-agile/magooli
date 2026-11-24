@@ -1,0 +1,1 @@
+.git/echo .envecho .env.*echo !.env.exampleecho __pycache__/echo *.log

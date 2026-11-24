@@ -1,0 +1,10 @@
+html, body { margin: 0; height: 100%; overflow: hidden; background: #050403; color: #f2e6c9;
+  font-family: "Palatino Linotype", Georgia, serif;
+  overscroll-behavior: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent; }
+#benilla { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; outline: none;
+  touch-action: none; }
+#gpu-warning { position: fixed; left: 50%; top: 40%; transform: translateX(-50%); z-index: 10;
+  max-width: min(560px, 90vw); text-align: center; color: #ff7b6b; }
+#gpu-warning a { color: #ffd100; }
+[hidden] { display: none !important; }

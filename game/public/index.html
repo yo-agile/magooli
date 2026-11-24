@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Azeroth Survivors</title>
+<link rel="stylesheet" href="./rogue.css?v=5">
+<script type="importmap">{"imports":{"wasi_snapshot_preview1":"./wasi_stubs.js?v=5"}}</script>
+</head>
+<body>
+<canvas id="benilla" tabindex="0"></canvas>
+<!-- Everything the game shows (the hero picker, the cards, the HUD) is drawn by the client
+     itself, the same as the native build; this page only boots it. -->
+<div id="gpu-warning" hidden>
+  <p id="gpu-warning-text">This browser has no WebGPU. The world needs it: use a current Chrome, Edge or Safari (Linux Chrome: enable chrome://flags/#enable-unsafe-webgpu).</p>
+  <!-- Shown when the Worker's daily request limit is hit (HTTP 429): the links go straight to
+       Discord and MEGA, not through the Worker's /discord and /download, so they still work. -->
+  <p id="busy-note" hidden>Too many people are playing!!! Join our <a href="https://discord.gg/azerothsurvivors" target="_blank" rel="noopener">Discord</a> or <a href="/download/AzerothSurvivorsWindowsNew.rar" target="_blank" rel="noopener">download the game for Windows</a>!!!</p>
+  <p>Or play it without a browser: <a href="/download/AzerothSurvivorsWindowsNew.rar" target="_blank" rel="noopener">download the game for Windows</a>.</p>
+</div>
+<script type="module" src="./rogue.js?v=5"></script>
+</body>
+</html>
